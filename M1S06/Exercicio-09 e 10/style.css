@@ -21,6 +21,7 @@ main {
     text-align: center;
     max-width: 600px;
     margin: auto;
+    transition: background-color 0.5s ease;
 }
 
 #profile-picture img {
@@ -47,4 +48,19 @@ footer {
     text-align: center;
     padding: 10px;
     width: 100%;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
