@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(37, 173, 173);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#section-signup{
+    width: 500px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+#section-signup h1{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#section-signup form{
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-add{
+    padding: 4px;
+    cursor: pointer;
+}
+
+.button-remove-last{
+    padding: 4px;
+    cursor: pointer;
+}
+
+form{
+    margin-bottom: 15px;
+}
+
+.car{
+    padding: 15px;
+    background-color: beige;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.car li{
+    list-style: none;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+
+.car ul{
+    display: flex;
+}
+
+.car button{
+    padding: 5px;
+    cursor: pointer;
+}
