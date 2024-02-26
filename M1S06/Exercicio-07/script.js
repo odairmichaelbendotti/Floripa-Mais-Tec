@@ -8,8 +8,3 @@ function changeBackgroundColor() {
 function welcomeMessage() {
     alert("Bem-vindo(a) ao nosso site!");
 }
-
-function updateUserName() {
-    var userNameElement = document.getElementById("user-name");
-    userNameElement.innerHTML = "Nome do Usuário Atualizado";
-}

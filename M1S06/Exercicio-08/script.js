@@ -11,5 +11,5 @@ function welcomeMessage() {
 
 function updateUserName() {
     var userNameElement = document.getElementById("user-name");
-    userNameElement.innerHTML = "Nome do Usuário Atualizado";
+    userNameElement.innerHTML = "Nome do Usuário Atualizado";   
 }
