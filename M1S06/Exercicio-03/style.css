@@ -1,0 +1,23 @@
+header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    font-size: 35px;
+    color: #333;
+}
+
+main {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    color: #333;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
