@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.container-area{
+    width: 1140px;
+    display: flex;
+}
+
+.texto{
+    width: 50%;
+}
+
+.bg{
+    width: 50%;
+}
+
+.texto{
+    display: flex;
+    align-items: center;
+}
+
+.bg{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.bg-yellow{
+    width: 477px;
+    height: 572px;
+    position: absolute;
+    z-index: 2;
+    background-image: url(assets/Bg\ yellow.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    left: 40px;
+    top: 150px;
+}
+
+.bg-black{
+    width: 650px;
+    height: 650px;
+    position: absolute;
+    z-index: 1;
+    background-image: url(assets/bg\ brown.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 50px;
+    top: 90px;
+}
+
+.bg-phone{
+    width: 650px;
+    height: 550px;
+    position: absolute;
+    z-index: 3;
+    background-image: url(assets/phone.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    right: -50px;
+    top: 320px;
+}
+
+.bg-hearth-01{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    z-index: 3;
+    background-image: url(assets/Heart\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    right: 150px;
+    top: 200px;
+}
+
+.bg-star-01{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    z-index: 3;
+    background-image: url(assets/Star\ 2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    right: -200px;
+    top: 600px;
+}
+
+.bg-star-02{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    z-index: 3;
+    background-image: url(assets/Star\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    right: 380px;
+    top: 0px;
+}
+
+.bg-portal-01{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    z-index: 3;
+    background-image: url(assets/Portal-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    right: -180px;
+    top: 200px;
+}
+
+.texto-area{
+    margin-top: 200px;
+}
+
+.texto-area h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.texto-area p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    margin-top: -20px;
+}
+
+.download-button{
+    font-family: "Poppins", sans-serif;
+    padding: 30px;
+    background-color: #FFDE81;
+    font-family: "Poppins", sans-serif;
+    width: 300px;
+    text-align: center;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.box{
+    background-color: #49342F;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+.box-01{    
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    padding: 20px;
+    font-size: 12px;
+}
+
+
+.box-01 .title, .box-02 .title, .box-03 .title{
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+}
+
+.box-02{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    padding: 20px;
+    font-size: 12px;
+}
+
+.box-03{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    padding: 20px;
+    font-size: 12px;
+}
+
+.bar{
+    width: 50px;
+    height: 5px;
+    background-color: white;
+    margin: 5px 0;
+    border-radius: 5px;
+}
