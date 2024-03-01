@@ -105,3 +105,36 @@ lista6 = lista3.some(function(item){
 
 console.log(lista6)
 
+/*Encontrar um item dentro de um array que satisfaça as condições solicitadas, retornará o nome do item*/
+let lista7 = ['José', 'Loiro', 3, 5, 'Odair']
+let lista7Find = lista7.find(function(item){
+    if (item == 'José'){
+        console.log(`Item ${item} encontrado.`)
+    }
+});
+
+/*Encontrar um item dentro de um array que satisfaça as condições solicitadas, retornará a posição do item*/
+let lista8 = ['José', 'Loiro', 3, 5, 'Odair']
+let lista8Find = lista8.findIndex(function(item){
+    return item == 'Odair'
+});
+
+console.log(lista8Find)
+
+//Exemplo prático
+let lista9 = [
+    {id:1, nome:'Bonieky', sobrenome:'Lacerda'},
+    {id:2, nome:'Paulo', sobrenome:'XYZ'},
+    {id:3, nome:'Fulano', sobrenome:'Da Silva'}
+  ];
+  
+  let pessoa = lista9.find(function(item){
+    return (item.sobrenome === 'XYZ') ? true : false;
+  });
+  
+  let encontrarPessoa = pessoa;
+  
+  console.log(encontrarPessoa);
+  
+
+  
