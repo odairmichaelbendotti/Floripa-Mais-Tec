@@ -1,0 +1,19 @@
+.container{
+    display: none;
+}
+
+.area-insercao {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cria 4 colunas */
+    grid-auto-rows: 100px; /* Cria 5 linhas */
+    height: 100vh; /* Faz o grid ocupar a altura total da tela */
+    gap: 10px; /* Espaço entre as células do grid */
+  }
+
+.grid-list {
+    background-color: #df1e1e; /* Cor de fundo de cada item do grid */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd; /* Borda dos itens do grid */
+  }
