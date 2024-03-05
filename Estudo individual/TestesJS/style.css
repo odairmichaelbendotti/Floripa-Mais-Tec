@@ -1,0 +1,62 @@
+.model{
+    display: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.area-insercao{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.menu-lateral{
+    width: 15%;
+    height: 100vh;
+    background-color: azure;
+    border: 1px solid grey;
+}
+
+.area-itens{
+    width: calc(100% - 15%);
+    height: 100vh;
+}
+
+.header{
+    height: 150px;
+    width: 100%;
+    border: 1px solid grey;
+}
+
+.window-item-area{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+.itens{
+    width: 100%;
+    padding: 25px;
+    border-radius: 25px;
+    border: 1px solid rgb(202, 202, 202);
+}
+
+.itens p, h2{
+    margin: 10px;
+}
+
+.userimg{
+    background-image: url(assets/user.jpg);
+    height: 100px;
+    width: 100px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50px;
+    background-color: rgba(240, 248, 255, 0);
+    display: inline-block;
+}

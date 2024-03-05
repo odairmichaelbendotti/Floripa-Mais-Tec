@@ -1,4 +1,6 @@
 let modalQt = 1;
+let cart = [];
+let modalKey;
 pizzaJson.map((item, index) => { // pegar o item e o Index no Json, por exemplo: Item 1 (id = 1), pizza  de Mussarela.
     //Obs: o map somente reconhece como padrão os seguintes eventos: item, index e array. No caso, somente dois foram usados neste exercício.
     let pizzaItem = document.querySelector('.pizza-item').cloneNode(true)
@@ -40,6 +42,7 @@ pizzaJson.map((item, index) => { // pegar o item e o Index no Json, por exemplo:
 
         document.querySelectorAll('.pizzaInfo--size').forEach((sizesDesc, sizesIndex) => {
             sizesDesc.querySelector('.pizzaInfo--size span').innerHTML = pizzaJson[index].sizes[sizesIndex];
+            modalKey = sizesIndex
 
             document.querySelectorAll('.pizzaInfo--size').forEach((sizesDesc, sizesIndex) => {
                 sizesDesc.querySelector('.pizzaInfo--size span').innerHTML = pizzaJson[index].sizes[sizesIndex];
@@ -92,4 +95,20 @@ document.querySelector('.pizzaInfo--qtmenos').addEventListener('click', () => {
         modalQt--;
         document.querySelector('.pizzaInfo--qt').innerHTML = modalQt;
     }
+})
+
+//Modelo padrão para tirar a seleção de um item já selecionado e marcar outro.
+document.querySelectorAll('.pizzaInfo--size').forEach((size, sizeIndex) => {
+    size.addEventListener('click', (e) => {
+        document.querySelector('.pizzaInfo--size.selected').classList.remove('selected')
+        size.classList.add('selected') //e.target é o botão em que eu cliquei!
+    })
+})
+
+//Adicionar ao carrinho
+document.querySelector('.pizzaInfo--addButton').addEventListener('click', () => {
+    // Qual a pizza?
+    console.log(modalKey)
+    //Qual o tamanho selecionado?
+    //Quantas pizzas?
 })
