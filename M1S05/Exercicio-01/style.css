@@ -1,1 +1,128 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.area-divs{
+    display: flex;
+    background-color: rgb(235, 241, 252);
+    justify-content: center;
+    width: 1300px;
+    height: 550px;
+    border-radius: 40px;
+    padding: 40px;
+
+}
+
+.detalhes-pedido{
+    width: 70%;
+    height: 100%;
+}
+
+.detalhes-pedido h2{
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-top: 20px;
+    color: rgb(96, 93, 93);
+}
+
+.detalhes-venda{
+    width: 50%;
+    height: 100%;
+}
+
+.pedidos{
+    background-color: aliceblue;
+    height: 300px;
+    margin-top: 20px;
+    overflow: auto;
+}
+
+.pedidos legend{
+    margin-left: 10px;
+}
+
+.pedidos p{
+    margin: 15px 10px;
+    font-size: 14px;
+    border-bottom: 1px solid rgb(205, 205, 205);
+}
+
+.add-itens{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 25px;
+}
+
+.codigo{
+    height: 30px;
+    width: 80%;
+}
+
+.cadastrar{
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.cadastrar-item{
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.cadastrar-item:hover{
+    background-color: rgb(219, 219, 219);
+}
+
+.add-itens input{
+    font-size: 15px;
+    padding-left: 5px;
+    border-radius: 10px;
+}
+
+.detalhes-venda{
+    padding: 30px;
+}
+
+.venda{
+    margin-top: 132px;
+}
+
+.venda legend{
+    margin-left: 10px;
+}
+
+.separador{
+    display: flex;
+
+    margin-top: 10px;
+}
+
+.separador p:first-child{
+    width: 200px;
+    height: 30px;
+    margin-left: 30px;
+}
+
+.separador p:nth-child(2){
+    width: 100px;
+    height: 30px;
+    text-align: center;
+}

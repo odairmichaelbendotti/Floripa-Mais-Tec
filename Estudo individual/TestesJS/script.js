@@ -13,7 +13,7 @@ lista.map((item, index) => {
     if (item.idade < 30){
         pOne.innerHTML = `${item.idade} anos`
     } else {
-        pOne.innerHTML = "< 30 anos"
+        pOne.innerHTML = "> 30 anos"
     }
 
     let pTwo = document.createElement('p')

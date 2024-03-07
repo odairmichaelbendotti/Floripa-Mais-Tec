@@ -7,7 +7,68 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <div class="area-divs">
+            <div class="detalhes-pedido">
+                <h2>Sistema supermercado</h2>
+                <fieldset class="pedidos"> 
+                    <legend>Detalhes do pedido</legend>
+                </fieldset>
+                 <div class="add-itens">
+                    <div class="item">
+                        Código
+                        <input type="text" class="codigo item" id="codigo-item">
+                    </div>
+                    <div class="item">
+                        Quantidade
+                        <input type="number" class="codigo" id="quantidade-item">
+                    </div>
+                    <div class="cadastrar">
+                        <div class="cadastrar-item">
+                            <p>Cadastrar</p>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+            <div class="detalhes-venda">
+                <div class="area-vendas">
+                    <fieldset class="venda">
+                        <legend>Detalhes da venda</legend>
+                        <div class="produtos">
+                            <div class="separador">
+                                <p>Código de venda</p>
+                                <p>0</p>
+                            </div>
 
+                            <div class="separador">
+                                <p>Cliente</p>
+                                <p>Odair</p>
+                            </div>
+
+                            <div class="separador">
+                                <p>Qtd produtos</p>
+                                <p>9</p>
+                            </div>
+
+                            <div class="separador">
+                                <p>Hora</p>
+                                <p>01:20</p>
+                            </div>
+
+                            <div class="separador">
+                                <p>Data</p>
+                                <p>05/03/2024</p>
+                            </div>
+                        </div>
+
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="lista.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
