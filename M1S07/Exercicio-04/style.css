@@ -103,6 +103,13 @@ p span{
     width: 100%;
 }
 
+.register{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 100%;
+}
+
 .choose-login-register{
     display: flex;
     align-items: center;
@@ -146,10 +153,18 @@ p span{
     font-weight: bold;
 }
 
-.selected{
+.selected-login{
     background-color: #6f5bb87e;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;  
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.selected-register{
+    background-color: #6f5bb87e;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;  
     color: #FFFFFF;
     font-weight: bold;
 }
@@ -165,6 +180,18 @@ p span{
     color: grey;
 }
 
+.name-area-email{
+    line-height: 45px;
+    border-radius: 15px;
+    border: none;
+    background-color: #745dc42c;
+    width: 100%;
+    font-size: 15px;
+    padding-left: 20px;
+    color: grey;
+    margin-bottom: 20px;
+}
+
 .login-area-password{
     margin-top: 20px;
     line-height: 45px;
@@ -177,10 +204,50 @@ p span{
     color: grey;
 }
 
+.login-area-password-register{
+    margin-top: 20px;
+    line-height: 45px;
+    border-radius: 15px;
+    border: none;
+    background-color: #745dc42c;
+    width: 49%;
+    font-size: 15px;
+    padding-left: 20px;
+    color: grey;
+}
+
+.username-area-register{
+    line-height: 45px;
+    border-radius: 15px;
+    border: none;
+    background-color: #745dc42c;
+    width: 49%;
+    font-size: 15px;
+    padding-left: 20px;
+    color: grey;
+    margin-bottom: 20px;
+}
+
+.phone-area-register{
+    line-height: 45px;
+    border-radius: 15px;
+    border: none;
+    background-color: #745dc42c;
+    width: 49%;
+    font-size: 15px;
+    padding-left: 20px;
+    color: grey;
+    margin-bottom: 20px;
+}
+
+.juntar-infos{
+    display: flex;
+    justify-content: space-between;
+}
+
 .login p{
     margin-top: 30px;
     cursor: pointer;
-    margin-left: 220px;
     display: flex;
     justify-content: flex-end;
 }
@@ -287,4 +354,8 @@ p span{
     border-radius: 20px;
     box-shadow: 5px 10px 30px #745dc42c;
     z-index: 1;
+}
+
+.hidden{
+    display: none;
 }
