@@ -1,0 +1,279 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.container{
+    background-image: radial-gradient(circle at 74.18% 116.45%, #ffafff 0, #ffa6ff 12.5%, #ff9bff 25%, #ff8dff 37.5%, #cb7cf2 50%, #9a6ad4 62.5%, #6f5bb8 75%, #4a4d9f 87.5%, #274289 100%);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-container{
+    width: 80%;
+    height: 60%;
+    background-color: #FFF;
+    border-radius: 60px;
+    box-shadow: 5px 10px 50px rgb(0, 0, 0);
+    display: flex;
+}
+
+.content-display-area{
+    width: 70%;
+    height: 100%;
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
+    background-image: radial-gradient(circle, #ffafff, #f7c6ff, #ffffff, #ffffff, #ffffff);
+}
+
+.content-login-area{
+    width: 30%;
+    height: 100%;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 50px;
+}
+
+.content-text{
+    margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+}
+
+.content-text h2{
+    margin-left: 80px;
+    font-size: 40px;
+    color: #4f4f4f;
+    margin-bottom: 15px;
+}
+
+.content-text p{
+    margin-left: 80px;
+    font-size: 20px;
+    color: #4f4f4f;
+    line-height: 30px;
+    
+}
+
+.logo-fmt{
+    background-image: url(assets/fmt-logo.png);
+    width: 600px;
+    height: 200px;
+    background-size: contain;
+    position: absolute;
+    bottom: 530px;
+    left: 60px;
+}
+
+p span{
+    font-weight: bold;
+    color: #9a6ad4;
+    cursor: pointer;
+}
+
+/* .footer-area{
+
+} */
+
+.choose-login-register{
+    margin-top: 110px;
+    width: 70%;
+    line-height: 40px;
+    border-radius: 30px;
+    border: 1px solid #6f5bb87e;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.choose-login-register{
+    display: flex;
+    align-items: center;
+}
+
+.choose-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    cursor: pointer;
+}
+
+.choose-register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;  
+    cursor: pointer;  
+}
+
+.choose-register:hover{
+    background-color: #745dc42c;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;  
+    color: black;
+    font-weight: bold;
+}
+
+.choose-login:hover{
+    background-color: #6f5bb87e;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;  
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.selected{
+    background-color: #6f5bb87e;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;  
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.login-area-email{
+    line-height: 45px;
+    border-radius: 15px;
+    border: none;
+    background-color: #745dc42c;
+    width: 100%;
+    font-size: 15px;
+    padding-left: 20px;
+    color: grey;
+}
+
+.login-area-password{
+    margin-top: 20px;
+    line-height: 45px;
+    border-radius: 15px;
+    border: none;
+    background-color: #745dc42c;
+    width: 100%;
+    font-size: 15px;
+    padding-left: 20px;
+    color: grey;
+}
+
+.login p{
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.btn-login{
+    margin-top: 50px;
+    width: 100%;
+    line-height: 50px;
+    background-color: #6f5bb87e;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 15px;
+    font-weight: bold;
+    box-shadow: 5px 10px 50px #745dc42c;
+    color: rgb(255, 255, 255);
+}
+
+/* ---------------- Criar divisor no Arquivo------------------- */
+.dividir-line{
+    margin-top: 190px;
+    color: rgba(128, 128, 128, 0.465);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.dividir-line p{
+    padding: 10px;
+    color: rgba(128, 128, 128, 0.465);
+    justify-content: center;
+}
+
+.line{
+    height: 1px;
+    border-top: 1px solid rgba(128, 128, 128, 0.465);
+    width: 150px;
+}
+
+.area-buttons-social{
+    margin-top: 30px;
+    width: 100%;
+
+}
+
+.social-btn{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.756);
+    color: rgba(128, 128, 128, 0.756);
+    padding: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.social-btn:hover{
+    background-color: #745dc42c;
+    border: 1px solid #745dc42c;
+}
+
+.social-btn i{
+    color: #274289;
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+.social-btn p{
+    letter-spacing: 2px;
+}
+
+.footer-area{
+    width: 100%;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 300px;
+    margin-left: 80px;
+    display: flex;
+}
+
+.footer-realizacao{
+    background-image: url(assets/footer-realizacao.png);
+    width: 40%;
+    height: 60px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 15px rgb(0, 0, 0);
+    position: absolute;
+}
+
+.footer-apoio{
+    background-image: url(assets/footer-apoio.png);
+    width: 40%;
+    height: 60px;
+    position: absolute;
+    right: 120px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 15px rgb(0, 0, 0);
+}
