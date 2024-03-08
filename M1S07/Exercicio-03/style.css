@@ -180,6 +180,7 @@ p span{
 .login p{
     margin-top: 30px;
     cursor: pointer;
+    margin-left: 220px;
 }
 
 .btn-login{
@@ -220,7 +221,6 @@ p span{
 .area-buttons-social{
     margin-top: 30px;
     width: 100%;
-
 }
 
 .social-btn{
@@ -264,7 +264,7 @@ p span{
     width: 40%;
     height: 60px;
     border-radius: 20px;
-    box-shadow: 5px 10px 15px rgb(0, 0, 0);
+    box-shadow: 5px 10px 30px #745dc42c;
     position: absolute;
 }
 
@@ -275,5 +275,5 @@ p span{
     position: absolute;
     right: 120px;
     border-radius: 20px;
-    box-shadow: 5px 10px 15px rgb(0, 0, 0);
+    box-shadow: 5px 10px 30px #745dc42c;
 }
