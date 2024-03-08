@@ -19,6 +19,7 @@
 
 .section-container{
     width: 80%;
+    min-height: 800px;
     height: 60%;
     background-color: #FFF;
     border-radius: 60px;
@@ -49,7 +50,6 @@
     margin-top: 110px;
     display: flex;
     flex-direction: column;
-    position: relative;
     height: 100%;
 }
 
@@ -65,7 +65,6 @@
     font-size: 20px;
     color: #4f4f4f;
     line-height: 30px;
-    
 }
 
 .logo-fmt{
@@ -73,9 +72,8 @@
     width: 600px;
     height: 200px;
     background-size: contain;
-    position: absolute;
-    bottom: 530px;
-    left: 60px;
+    margin-top: 20%;
+    margin-left: 80px;
 }
 
 p span{
@@ -83,10 +81,6 @@ p span{
     color: #9a6ad4;
     cursor: pointer;
 }
-
-/* .footer-area{
-
-} */
 
 .choose-login-register{
     margin-top: 110px;
@@ -97,6 +91,13 @@ p span{
 }
 
 .login{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.register{
     display: flex;
     flex-direction: column;
     margin-top: 40px;
@@ -146,10 +147,18 @@ p span{
     font-weight: bold;
 }
 
-.selected{
+.selected-login{
     background-color: #6f5bb87e;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;  
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.selected-register{
+    background-color: #6f5bb87e;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;  
     color: #FFFFFF;
     font-weight: bold;
 }
@@ -165,6 +174,18 @@ p span{
     color: grey;
 }
 
+.name-area-email{
+    line-height: 45px;
+    border-radius: 15px;
+    border: none;
+    background-color: #745dc42c;
+    width: 100%;
+    font-size: 15px;
+    padding-left: 20px;
+    color: grey;
+    margin-bottom: 20px;
+}
+
 .login-area-password{
     margin-top: 20px;
     line-height: 45px;
@@ -177,10 +198,50 @@ p span{
     color: grey;
 }
 
+.login-area-password-register{
+    margin-top: 20px;
+    line-height: 45px;
+    border-radius: 15px;
+    border: none;
+    background-color: #745dc42c;
+    width: 49%;
+    font-size: 15px;
+    padding-left: 20px;
+    color: grey;
+}
+
+.username-area-register{
+    line-height: 45px;
+    border-radius: 15px;
+    border: none;
+    background-color: #745dc42c;
+    width: 49%;
+    font-size: 15px;
+    padding-left: 20px;
+    color: grey;
+    margin-bottom: 20px;
+}
+
+.phone-area-register{
+    line-height: 45px;
+    border-radius: 15px;
+    border: none;
+    background-color: #745dc42c;
+    width: 49%;
+    font-size: 15px;
+    padding-left: 20px;
+    color: grey;
+    margin-bottom: 20px;
+}
+
+.juntar-infos{
+    display: flex;
+    justify-content: space-between;
+}
+
 .login p{
     margin-top: 30px;
     cursor: pointer;
-    margin-left: 220px;
     display: flex;
     justify-content: flex-end;
 }
@@ -200,7 +261,7 @@ p span{
 
 /* ---------------- Criar divisor no Arquivo------------------- */
 .dividir-line{
-    margin-top: 100px;
+    margin-top: 5px;
     color: rgba(128, 128, 128, 0.465);
     display: flex;
     align-items: center;
@@ -221,7 +282,6 @@ p span{
 }
 
 .area-buttons-social{
-    margin-top: 30px;
     width: 100%;
 }
 
@@ -287,4 +347,8 @@ p span{
     border-radius: 20px;
     box-shadow: 5px 10px 30px #745dc42c;
     z-index: 1;
+}
+
+.hidden{
+    display: none;
 }
