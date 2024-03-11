@@ -1,0 +1,98 @@
+body, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-info .avatar {
+    background-image: url(assets/fmt-logo.jpg);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .dashboard {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .cardclass {
+    width: 30%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .card-2 {
+    width: 30%;
+    background-color: #891a1a;
+    padding: 20px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  }
+  
+  .card h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .card p {
+    color: #666;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+
+.stats .dark-mode{
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.stats .light-mode{
+    cursor: pointer;
+}
+
+.lightmode-class{
+    background-color: aliceblue;
+    box-shadow: 10px 10px 15px;
+    color: rgb(14, 13, 13);
+}
+
+.darkmode-class{
+    background-color: #c5c5c5;
+    color: #FFFFFF;
+}
+
+.bold-class{
+    font-weight: bold;
+    color: rgb(226, 53, 53)
+}
