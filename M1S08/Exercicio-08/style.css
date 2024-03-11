@@ -1,0 +1,67 @@
+body, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+.darkmode-class {
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+.lightmode-class {
+  background-color: #f0f0f0; 
+  color: black;
+  cursor: pointer;
+}
+
+.bold-class {
+  font-weight: bold;
+}
+
+.cardclass {
+  width: 30%;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 5px;
+}
+
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.buttonAdd, .buttonRemove {
+  cursor: pointer;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+.buttonAdd {
+  background-color: #4CAF50; 
+  color: white;
+}
+
+.buttonRemove {
+  background-color: #f44336; 
+  color: white;
+}
+
+.display-text input {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
