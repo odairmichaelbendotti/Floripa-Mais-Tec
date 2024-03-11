@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(37, 173, 173);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#secao-cadastro{
+    width: 500px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+#secao-cadastro h1{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#secao-cadastro form{
+    display: flex;
+    justify-content: space-around;
+}
+
+.botao-adicionar, .botao-remover-ultimo{
+    padding: 4px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+form{
+    margin-bottom: 15px;
+}
+
+.tarefa{
+    padding: 15px;
+    background-color: beige;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
