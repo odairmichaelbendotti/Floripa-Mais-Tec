@@ -1,44 +1,46 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const botaoAdicionar = document.querySelector('.botao-adicionar');
-    const botaoRemoverUltimo = document.querySelector('.botao-remover-ultimo');
-    let contador = 0;
+    const buttonAdd = document.querySelector('.button-add');
+    let count = 0;
 
-    botaoAdicionar.addEventListener('click', function(e) {
+    buttonAdd.addEventListener('click', function(e) {
         e.preventDefault();
-        contador++;
-        const entradaData = document.querySelector('.entrada-data');
-        const entradaTarefa = document.querySelector('.entrada-tarefa');
-        const secaoTarefa = document.querySelector('.adicionar-tarefa');
+        count++;
+        const inputBrand = document.querySelector('.input-brand');
+        const inputCar = document.querySelector('.input-car');
+        const addCar = document.querySelector('.add-car');
 
-        if (contador <= 10) {
-            const novaTarefaDiv = document.createElement('div');
-            novaTarefaDiv.classList.add('tarefa');
-            novaTarefaDiv.innerHTML = `
-                <span>${entradaData.value} - ${entradaTarefa.value}</span>
-                <button class="botao-remover">
-                    <i class="fa-regular fa-trash-can"></i>
-                </button>
-            `;
+        if (count <= 10) {
+            const newItemDiv = document.createElement('div');
+            newItemDiv.classList.add('car');
+            newItemDiv.innerText = `${inputBrand.value}. ${inputCar.value}`;
 
-            secaoTarefa.appendChild(novaTarefaDiv);
-
-            const botaoRemover = novaTarefaDiv.querySelector('.botao-remover');
-            botaoRemover.addEventListener('click', function() {
-                secaoTarefa.removeChild(novaTarefaDiv);
+            const newItemButton = document.createElement('button');
+            newItemButton.innerHTML = '<i class="fa-regular fa-trash-can"></i>';
+            newItemButton.addEventListener('click', function() {
+                addCar.removeChild(newItemDiv);
             });
 
-            entradaData.value = '';
-            entradaTarefa.value = '';
+            newItemDiv.appendChild(newItemButton);
+            addCar.appendChild(newItemDiv);
+
+            // Marcar como concluída
+            newItemDiv.addEventListener('click', function() {
+                newItemDiv.classList.toggle('concluida');
+            });
+
+            inputBrand.value = '';
+            inputCar.value = '';
         } else {
-            alert('Para adicionar mais tarefas adquira a versão PRO');
-            botaoAdicionar.disabled = true;
+            alert('Limite de itens adicionado atingido.');
+            buttonAdd.disabled = true;
         }
     });
 
-    botaoRemoverUltimo.addEventListener('click', function() {
-        const secaoTarefa = document.querySelector('.adicionar-tarefa');
-        if (secaoTarefa.lastChild) {
-            secaoTarefa.removeChild(secaoTarefa.lastChild);
+    const removeLastLine = document.querySelector('.button-remove-last');
+    removeLastLine.addEventListener('click', function(e) {
+        e.preventDefault();
+        if (addCar.lastChild) {
+            addCar.removeChild(addCar.lastChild);
         }
     });
 });

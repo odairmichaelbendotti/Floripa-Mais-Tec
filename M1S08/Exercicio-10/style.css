@@ -1,51 +1,104 @@
 * {
     padding: 0;
-    font-family: 'Roboto', sans-serif;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
-body{
-    background-color: rgb(37, 173, 173);
+body {
+    background-color: #f5f7fa;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0 auto;
 }
 
-#secao-cadastro{
-    width: 500px;
-    background-color: aliceblue;
+#section-signup {
+    width: 90%;
+    max-width: 500px;
+    background-color: white;
     border-radius: 15px;
-    padding: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
 }
 
-#secao-cadastro h1{
+#section-signup h1 {
+    color: #333;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    font-weight: 600;
 }
 
-#secao-cadastro form{
+#section-signup form {
     display: flex;
-    justify-content: space-around;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-.botao-adicionar, .botao-remover-ultimo{
-    padding: 4px;
-    cursor: pointer;
+input[type="date"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.button-add,
+.button-remove-last {
+    background-color: #4CAF50;
+    color: white;
     border: none;
-    background-color: transparent;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-form{
-    margin-bottom: 15px;
+.button-add:hover,
+.button-remove-last:hover {
+    background-color: #45a049;
 }
 
-.tarefa{
+.button-remove-last {
+    background-color: #f44336;
+}
+
+.button-remove-last:hover {
+    background-color: #e53935;
+}
+
+.add-car {
+    margin-top: 20px;
+}
+
+.car {
     padding: 15px;
-    background-color: beige;
-    margin-top: 5px;
+    background-color: #e9ecef;
+    margin-top: 10px;
+    border-radius: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: transform 0.2s ease;
+}
+
+.car.concluida {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+.car button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.fa-trash-can {
+    color: #dc3545;
+}
+
+.fa-plus {
+    color: white;
 }
