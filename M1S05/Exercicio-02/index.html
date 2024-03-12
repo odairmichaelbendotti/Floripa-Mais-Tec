@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="order-details">
+                <h1>[M1S05] Exercício 02</h1>
+                <fieldset class="order">
+                    <legend>Detalhes do Pedido</legend>
+                    <div class="order-list" id="order-list">
+                        <!-- Lista de produtos adicionados ao carrinho aparecerá aqui -->
+                    </div>
+                    <div class="input-group">
+                        <input type="text" class="input-item" id="codigo-item" placeholder="Código do Produto">
+                        <input type="number" class="input-item" id="quantidade-item" placeholder="Quantidade">
+                    </div>
+                    <div class="button-group">
+                        <button class="button" id="add-item">Adicionar ao Carrinho</button>
+                        <button class="button" id="clear-list">Limpar Lista</button>
+                        <button class="button" id="buy">Comprar</button>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="sale-details">
+                <fieldset class="sale">
+                    <legend>Detalhes da Venda</legend>
+                    <div class="sale-info">
+                        <p><span>Cliente:</span> <span id="client-name">Odair</span></p>
+                        <p><span>Qtd de Produtos:</span> <span id="total-products">0</span></p>
+                    </div>
+                    <div class="total-info">
+                        <p>Total:</p>
+                        <p id="total-amount">R$ 0,00</p>
+                    </div>
+                </fieldset>
+                <div class="consult-items">
+                    <button class="button" id="consult-items">Consultar Produtos</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="lista.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
