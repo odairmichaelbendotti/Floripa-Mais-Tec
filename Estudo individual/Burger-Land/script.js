@@ -34,3 +34,10 @@ likeBtn.forEach(item => {
         item.classList.toggle('fa-solid')
     })
 })
+
+const checkItens = document.querySelectorAll('.button-individual-price');
+checkItens.forEach(item => {
+    item.addEventListener('click', () => {
+        alert(`O preço é ${item.textContent}`)
+    })
+})
