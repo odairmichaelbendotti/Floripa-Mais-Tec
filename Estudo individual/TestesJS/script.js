@@ -1,5 +1,5 @@
 let windodArea = document.querySelector('.window-item-area')
-lista.map((item, index) => {
+lista.map((item) => {
     let divOne = document.createElement('div');
     divOne.classList.add('itens');
     

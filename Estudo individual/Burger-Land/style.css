@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+:root{
+    --brand: #20170E;
+    --secondary: #F3DFA0;
+    --red: #F34E26;
+    --text: #EAEAEA;
+    --selected: #D77F33;
+    --terciary: #F34E26;
+    --font-bebas-neue:  "Bebas Neue", sans-serif;
+    --font-roboto-slab: "Roboto Slab", serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-bebas-neue)
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.container-area{
+    width: 834px;
+    background-color: var(--brand);
+    padding-bottom: 50px;
+}
+
+.header{
+    display: flex;
+    height: 188px;
+}
+
+.logo{
+    justify-content: flex-start;
+    width: 30%;
+    height: 100%;
+}
+
+.logo-text{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo-text h2{
+    color: var(--secondary);
+    font-size: 64px;
+}
+
+.choose-buttons{
+    display: flex;
+    color: white;
+    gap: 20px;
+}
+
+.container-itens{
+    padding: 0px 60px;
+}
+
+.choose-buttons div{
+    width: 130px;
+    line-height: 50px;
+    background-color: var(--secondary);
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 100;
+    font-size: 20px;
+    color: var(--brand);
+}
+
+.selecionar:hover{
+    background-color: var(--selected);
+}
+
+.selecionar.selected{
+    background-color: var(--selected);
+}
+
+.food-img{
+    width: 200px;
+}
+
+.food-area p{
+    color: var(--secondary);
+    font-size: 36px;
+    margin-top: 30px;
+}
+
+.display-food{
+    display: flex;
+    margin-top: 20px;
+}
+
+.food-description{
+    margin-left: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.food-description div:first-child{
+    color: var(--text);
+    margin-bottom: 15px;
+    font-size: 32px;
+    letter-spacing: 5px;
+    text-align: justify;
+}
+
+.food-description > div:nth-child(2){
+    color: var(--text);
+    font-size: 18px;
+    font-family: var(--font-roboto-slab);
+    text-align: justify;
+}
+
+.like-and-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.like-and-price i:first-child{
+    color: var(--red);
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.button-individual-price{
+    color: var(--brand);
+    font-size: 25px;
+    background-color: var(--secondary);
+    padding: 5px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
