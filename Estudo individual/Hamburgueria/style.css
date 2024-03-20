@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Athiti", sans-serif;
+}
+
+:root{
+    --green-color: rgb(43, 165, 43);
+    --white-color: #FFFFFF;
+    --black-color: rgb(29, 28, 28);
+}
+
+.img-area{
+    background-image: url(assets/bg.png);
+    width: 100%;
+    height: 410px;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.dev-burger-show{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dev-burger-show img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+.title{
+    font-size: 50px;
+    color: var(--white-color);
+    font-weight: 700;
+}
+
+.text-white{
+    font-size: 25px;
+    color: var(--white-color);
+    font-weight: 500;
+}
+
+.status-btn{
+    margin-top: 10px;
+    color: var(--white-color);
+    padding: 5px 20px;
+    background-color: var(--green-color);
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 2300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h2{
+    margin-bottom: 30px;
+}
+
+.product-area{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.product{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.product img{
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+}
+
+.text-area{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.text-title-product{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.text-title-product-chart{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.text-description-product{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.chart-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.chart-btn i{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+/*MODAL CHART */
+
+.modal-chart{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.232);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-chart{
+    width: 40%;
+    height: 500px;
+    background-color: var(--white-color);
+    border-radius: 50px;
+    padding: 30px;
+}
+
+.items-chart{
+    border-radius: 30px;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    }
+
+.individual-item-img{
+    height: 80px;
+    width: 80px;
+    border-radius: 15px;
+}
+
+.individual-item{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    gap: 20px;
+}
+
+.individual-infos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.qtd-item{
+    display: flex;
+    gap: 15px;
+}
+
+.final-choose-qtd-remove-chart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.close-btn{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.fa-xmark{
+    cursor: pointer;
+}

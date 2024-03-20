@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --color-background: #FFF;
+    --color-black: #212121;
+    --color-text: #4F4F4F;
+    --color-texto-out: #90908E;
+    --color-primary: #FFBF00;
+    --color-secondary: #FFF2CC;
+    --color-white: #FFFFFF;
+    --color-red: #E74C3C;
+    --color-green: #2ECC71;
+    --color-separete: #CCCCCC;
+    --color-black-heavy: #000000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 1500px;
+}
+
+.menu-area{
+    display: flex;
+    height: 120px;
+}
+
+.img-side{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;  /*Verificar se ficará centralizada ou no canto inicial */
+}
+
+.menu-side{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    background-image: url(assets/img/logo.png);
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.menu-side ul{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-side ul li{
+    cursor: pointer;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.menu-side ul li:hover{
+    color: var(--color-primary);
+}
+
+.menu-chart{
+    display: flex;
+    align-items: center;
+}
+
+.btn-chart{
+    width: 250px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    gap: 30px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.btn-chart:hover{
+    background-color: var(--color-primary);
+    font-weight: 600;
+}
+
+.btn-chart:hover .bg-icon{
+    background-color: var(--color-background);
+    color: var(--color-primary);
+}
+
+.bg-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primary);
+    padding: 12px;
+    border-radius: 10px;
+    color: var(--color-white);
+}
+
+.your-food-area{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.area-yf{
+    display: flex;
+}
+
+.text-yf-area{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 60px;
+    color: var(--color-text);
+}
+
+.text-yf-area p{
+    font-size: 20px;
+    color: var(--color-text);
+}
+
+.text-yf-area h3{
+    line-height: 80px;
+}
+
+.yellow-span{
+    color: var(--color-primary);
+}
+
+.img-yf-area{
+    width: 55%;
+}
+
+.img-area-yf{
+    display: flex;
+    justify-content: flex-end;   
+}
+
+.botoes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.btn-cardapio{
+    width: 40%;
+    line-height: 70px;
+    background-color: var(--color-primary);
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.btn-cardapio p{
+    color: var(--color-white);
+}
+
+.btn-phone{
+    display: flex;
+    align-items: center;
+    width: 55%;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.btn-phone:hover{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn-phone:hover .bg-icon-2{
+    background-color: var(--color-white);    
+    color: var(--color-primary);
+}
+
+.bg-icon-2{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 25px;
+    align-items: center;
+    background-color: var(--color-primary);
+    border-radius: 15px;
+    color: var(--color-white);
+}
+
+.btn-social{
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+    color: var(--color-black);
+}
+
+.social-btn{
+    width: 60px;
+    line-height: 60px;
+    text-align: center;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.social-btn:hover{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.pedidos{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.padrao-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.padrao-text p{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--color-primary);
+}
+
+.padrao-text h3{
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: var(--color-text)
+}
+
+.beneficios{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.beneficios .img-beneficios {
+    height: 300px;
+    width: 300px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.facil-de-pedir {
+    background-image: url(assets/img/icone-pedido.svg);
+    margin-bottom: 30px;
+}
+
+.entrega-rapida {
+    background-image: url(assets/img/icone-delivery.svg);
+    margin-bottom: 30px;
+}
+
+.melhor-qualidade {
+    background-image: url(assets/img/icone-qualidade.svg);
+    margin-bottom: 30px;
+}
+
+.alinhar-beneficios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    justify-content: center;
+}
+
+.alinhar-beneficios p{
+    text-align: center;
+    color: var(--color-texto-out);
+}
+
+.cardapio{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    height: 800px;
+}
+
+.escolher-item{
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.choose-item p{
+    margin-left: 25px;
+}
+
+.choose-item{
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px;
+    line-height: 30px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.322);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.choose-item:hover{
+    background-color: var(--color-primary);
+}
+
+.selected{
+    background-color: var(--color-primary);
+}
