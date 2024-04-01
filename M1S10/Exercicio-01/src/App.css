@@ -1,3 +1,8 @@
+*{
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -14,14 +19,13 @@ body{
 .container-trilha{
   width: 960px;
   height: 351px;
-  background-color: blueviolet;
   display: flex;
+  box-shadow: 5px 1px 10px -1px rgba(0, 0, 0, 0.5);
 }
 
-.container-img{
+.container-img img{
   width: 400px;
   height: 100%;
-  background-image: url(assets/piscinas-naturais.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -30,5 +34,53 @@ body{
 .container-text{
   width: 560px;
   height: 100%;
-  background-color: brown;
+  background-color: white;
+  padding: 0px 30px;
+}
+
+.container-text h3{
+  color: black;
+  text-align: left;
+}
+
+.trilha-name-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.risco{
+  height: 2px;
+  width: 50px;
+  background-color: black;
+}
+
+.autor{
+  text-align: right;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.about-trilha{
+  margin-top: 50px;
+  text-align: left;
+  font-size: 13px;
+  color: grey;
+}
+
+.dificuldade{
+  background-color: #EFF0F0;
+  color: #0D1A26;
+  width: 60px;
+  font-size: 13px;
+  padding: 3px;
+  border-radius: 10px;
+}
+
+.avaliacoes{
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  font-size: 30px;
+  cursor: pointer;
 }
