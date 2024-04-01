@@ -13,7 +13,6 @@
 body{
   display: flex;
   justify-content: center;
-  background-color: bisque;
 }
 
 .container-trilha{
@@ -83,4 +82,10 @@ body{
   gap: 20px;
   font-size: 30px;
   cursor: pointer;
+}
+
+.textChamada{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
 }
