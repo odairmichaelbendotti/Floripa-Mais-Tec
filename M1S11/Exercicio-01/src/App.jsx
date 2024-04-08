@@ -1,10 +1,29 @@
+// App.jsx
+import React from 'react';
+import { Card } from './assets/components/Card'; // Certifique-se de que o caminho está correto
+import trilhas from './assets/trilhas'; // Importa o array de trilhas diretamente
 import './index.css'
-import { Card } from './assets/components/Card'
+import { Header } from './assets/components/Header'
 
-export const App = () => {
+const App = () => {
   return (
     <div>
-      <Card nomeTrilha='Praia' cidade='Florianópolis' estado='SC' autor='Odair Michael' tempo='120' distancia='4' nivel='Iniciante'/>
+    <Header />
+      {trilhas.map(trilha => (
+        <Card
+          key={trilha.nomeTrilha}
+          nomeTrilha={trilha.nomeTrilha}
+          cidade={trilha.cidade}
+          estado={trilha.estado}
+          autor={trilha.autor}
+          tempo={trilha.tempo}
+          distancia={trilha.distancia}
+          nivel={trilha.nivel}
+          url={trilha.url}
+        />
+      ))}
     </div>
-  )
+  );
 }
+
+export default App;

@@ -5,6 +5,7 @@
     -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+    margin-bottom: 20px;
 }   
 
 .containerImg{
@@ -60,7 +61,7 @@
 
 .dificuldade{
     background-color: grey;
-    width: 70px;
+    width: 110px;
     text-align: center;
     padding: 3px;
     border-radius: 10px;

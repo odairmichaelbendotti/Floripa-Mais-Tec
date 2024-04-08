@@ -1,10 +1,10 @@
 import CardStyle from '../components/styleComponents/CardStyle.module.css'
 
-export const Card = ({nomeTrilha, cidade, estado, autor, tempo, nivel, distancia}) => {
+export const Card = ({url, nomeTrilha, cidade, estado, autor, tempo, nivel, distancia}) => {
     return (
         <div className={CardStyle.bg}>
             <div className={CardStyle.containerImg}>
-                <img src="https://meumapamundi.com.br/wp-content/uploads/2021/05/Piscinas-Naturais-Barra-da-Lagoa-Floriano%CC%81polis.jpg" alt="Piscinas naturais" />
+                <img src={url} alt="Piscinas naturais" />
             </div>
             <div className={CardStyle.containerText}>
                 <h1>{nomeTrilha} - {cidade}/{estado}</h1>
