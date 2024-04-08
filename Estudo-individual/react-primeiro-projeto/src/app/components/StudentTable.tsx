@@ -18,7 +18,7 @@ export const StudentTable = ({students}:Props) => {
                 </tr>
             </thead>
             <tbody>
-                
+
             </tbody>    
         </table>
     )

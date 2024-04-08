@@ -13,8 +13,8 @@ const btnStop = document.querySelector('.button-stop')
 const stopRandomText = document.querySelector('.stop-random-text')
 
 let countdown;
-let timeRemaining = 25 * 60; //3 segundos
-let restTimeRemaining = 5 * 60; //5 minutos
+let timeRemaining = 0.05 * 60; //3 segundos
+let restTimeRemaining = 0.05 * 60; //5 minutos
 
 // // Retirar API key antes de mandar o projeto final !!
 const apiKey = '1fZ4NS89JhTbeeXvEu8Uhg==zWf7ioezJ86uDQ3u'

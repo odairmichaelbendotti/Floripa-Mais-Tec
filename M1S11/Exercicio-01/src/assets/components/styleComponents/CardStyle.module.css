@@ -1,0 +1,75 @@
+.bg{
+    width: 800px;
+    height: 300px;
+    display: flex;
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+}   
+
+.containerImg{
+    height: 100%;
+    width: 40%;
+}
+
+.containerText{
+    height: 100%;
+    width: 60%;
+    background-color: #FFFFFF;
+    padding: 0 20px;
+}
+
+.containerImg img{
+    height: 100%;
+    width: 100%;
+    background-position: top;
+}
+
+.containerText h1{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.line{
+    height: 2px;
+    width: 100px;
+    background-color: rgb(78, 77, 77);
+    margin-top: 15px;
+}
+
+.leftH2{
+    font-size: 16px;
+    text-align: right;
+}
+
+.containerText h2{
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.divSeparator{
+    margin-top: 40px;
+}
+
+.containerText h3{
+    font-size: 14px;
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: 200;
+}
+
+.dificuldade{
+    background-color: grey;
+    width: 70px;
+    text-align: center;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.avaliacoes{
+    display: flex;
+    font-size: 20px;
+    gap: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
