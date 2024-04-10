@@ -60,3 +60,16 @@
 
 **Props**
  - Props nos permite passar argumentos para os componentes criados. É como se fosse passar um parâmetro para uma função para que quando a reutilização seja feita, seja possível alterar os valores para não tornar todos os blocos iguais.
+
+ **State/Estado**
+  - Permite que tenhamos na tela informações que serão renderizadas e atualizadas dinamicamente de acordo com a mudança de valores no js.
+  - Por exemplo: botão de follow, ao clicar vira following.
+  - useState: [valor, funçãoModificadora]
+    
+    const [followText, setFollowText] = useState('Follow')
+    function following (){
+        setFollowText('Following')
+    }
+
+**Hooks**
+ - 

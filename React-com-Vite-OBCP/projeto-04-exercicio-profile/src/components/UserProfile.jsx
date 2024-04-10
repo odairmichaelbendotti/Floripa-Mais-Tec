@@ -1,6 +1,14 @@
+import { useState } from 'react';
 import userProfiles from './styles/userProfiles.module.css'
 
 export const UserProfile = ({name, phone, linkedin}) => {
+    
+    const [followText, setFollowText] = useState('Follow')
+
+    function following (){
+        setFollowText('Following')
+    }
+
     return (
         <div className={userProfiles.odair}>
             <div className={userProfiles.profileImg}></div>      
@@ -18,8 +26,8 @@ export const UserProfile = ({name, phone, linkedin}) => {
                 </p>
 
                 <div className={userProfiles.btnContainer}>
-                    <div className={userProfiles.btnContact}>
-                        Entrar em contato
+                    <div className={userProfiles.btnContact} onClick={following}>
+                        {followText}
                     </div>
                 </div>
             </div>

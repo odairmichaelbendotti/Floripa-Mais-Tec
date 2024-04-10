@@ -1,0 +1,8 @@
+h1{
+    display: flex;
+    gap: 10px;
+    background-color: bisque;
+    border-radius: 5px;
+    color: red;
+    flex-direction: column;
+}

@@ -1,0 +1,63 @@
+.containerBtn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btnGerar{
+    width: 150px;
+    line-height: 50px;
+    background-color: aqua;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 20px;
+    color: #FFFFFF;
+    background-color: rgb(34, 34, 34);
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(255,255,255,1);
+    box-shadow: 0px 0px 13px 0px rgba(255,255,255,1);
+    cursor: pointer;
+}
+
+.btnCopiar{
+    width: 150px;
+    line-height: 50px;
+    background-color: aquamarine;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 20px;
+    color: #FFFFFF;
+    background-color: rgb(34, 34, 34);
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(255,255,255,1);
+    box-shadow: 0px 0px 13px 0px rgba(255,255,255,1);
+    cursor: pointer;
+}
+
+.btnGerar:hover, .btnCopiar:hover{
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(252,0,252,1);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(252,0,252,1);
+    box-shadow: 0px 0px 13px 0px rgba(252,0,252,1);
+}
+
+.containerBtns{
+    display: flex;
+    gap: 50px;
+}
+
+.containerPassword{
+    line-height: 50px;
+    text-align: center;
+    margin-top: 50px;
+    border: 1px solid black;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(255,255,255,1);
+    box-shadow: 0px 0px 8px 0px rgba(255,255,255,1);
+    border-radius: 10px;
+}
+
+.containerPassword:hover{
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(49,230,200,1);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(49,230,200,1);
+    box-shadow: 0px 0px 8px 0px rgba(49,230,200,1);
+}
