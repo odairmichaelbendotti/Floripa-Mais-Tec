@@ -102,3 +102,6 @@
 **State Lift**
 - É uma técnica para compartilhar State
 - É normal vários componentes dependerem do mesmo estado, para isso  o State Lift contribuir para compartilhar o estado. Quando dois ou mais componentes precisam acessar e reagir às mesmas informações, a elevação de estado permite que você mova o estado compartilhado para o ancestral comum mais próximo. Isso significa que em vez de cada componente manter seu próprio estado, um único componente pai gerencia o estado e o passa para os componentes filhos via props.
+
+**Router**
+ - Instalar Router: npm install react-router-dom
