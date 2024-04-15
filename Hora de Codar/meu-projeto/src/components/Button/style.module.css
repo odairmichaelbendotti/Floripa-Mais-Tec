@@ -1,0 +1,11 @@
+.containerDiv{
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.containerDiv button{
+    width: 100px;
+    height: 20px;
+}

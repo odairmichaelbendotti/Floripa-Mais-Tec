@@ -71,5 +71,34 @@
         setFollowText('Following')
     }
 
-**Hooks**
- - 
+**Prop-typs (npm install prop-typs)**
+ - Podemos definir tipos de props para realizar uma espécie de validação, assim se alguém novo entrar na equipe saberá o tipo de valor da prop.
+ 
+    import PropTypes from 'prop-types'
+    
+    export const HelloWorld = ({name, age }) => {
+
+    return (
+        <div>
+            <h1 className={style.colorBg}>Meu primeiro componente {name} - {age}</h1>
+        </div>
+            )
+        }
+
+    HelloWorld.propTypes = {
+        name: PropTypes.string.isRequired,
+        age: PropTypes.number.isRequired
+    }
+
+    HelloWorld.defaultProps = {
+        name: 'Faltou a marca',
+        age: 0
+    }
+
+**Renderização condicional (if)**
+ - Quando o usuário está logado, podemos fazer com que telas específicas apareçam por meio de uma condicional if. Assim como diversas outras funções
+ podem ser feitas condicionalmente para aparecer alguma coisa na tela.
+
+**State Lift**
+- É uma técnica para compartilhar State
+- É normal vários componentes dependerem do mesmo estado, para isso  o State Lift contribuir para compartilhar o estado. Quando dois ou mais componentes precisam acessar e reagir às mesmas informações, a elevação de estado permite que você mova o estado compartilhado para o ancestral comum mais próximo. Isso significa que em vez de cada componente manter seu próprio estado, um único componente pai gerencia o estado e o passa para os componentes filhos via props.

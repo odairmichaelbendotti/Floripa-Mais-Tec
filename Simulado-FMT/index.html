@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Painel de Vendas de Automóveis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Painel de Vendas de Automóveis</h1>
+    </header>
+    <div id="painel">
+        <p>Total em Estoque: <span id="totalEstoque">0</span></p>
+        <p>Total de Vendas: <span id="totalVendas">0</span></p>
+        <p>Faturamento: R$<span id="faturamento">0</span></p>
+        <p>Lucro: R$<span id="lucro">0</span> (<span id="percentualLucro">0</span>%)</p>
+    </div>
+    <main>
+        <section id="secaoAdicionarVeiculo">
+            <h2>Adicionar Veículo</h2>
+            <form id="formularioAdicionarVeiculo">
+                <input type="text" id="marca" placeholder="Marca" required>
+                <input type="text" id="modelo" placeholder="Modelo" required>
+                <input type="number" id="ano" placeholder="Ano" required>
+                <input type="number" id="preco" placeholder="Preço de Custo" required>
+                <input type="text" id="filial" placeholder="Filial" required>
+                <button type="submit">Adicionar Veículo</button>
+            </form>
+        </section>
+        <section id="secaoListaVeiculos">
+            <h2>Veículos à Venda</h2>
+            <div id="listaVeiculos"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Vendas de Automóveis Inc.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

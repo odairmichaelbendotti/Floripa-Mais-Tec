@@ -1,0 +1,11 @@
+form{
+    display: flex;
+    gap: 20px;
+}
+
+form input{
+    border-radius: 20px;
+    background-color: rgb(80, 80, 80);
+    color: #FFFFFF;
+    padding-left: 10px;
+}
