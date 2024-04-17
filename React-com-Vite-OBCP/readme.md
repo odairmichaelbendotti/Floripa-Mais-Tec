@@ -104,4 +104,25 @@
 - É normal vários componentes dependerem do mesmo estado, para isso  o State Lift contribuir para compartilhar o estado. Quando dois ou mais componentes precisam acessar e reagir às mesmas informações, a elevação de estado permite que você mova o estado compartilhado para o ancestral comum mais próximo. Isso significa que em vez de cada componente manter seu próprio estado, um único componente pai gerencia o estado e o passa para os componentes filhos via props.
 
 **Router**
- - Instalar Router: npm install react-router-dom
+ - Instalar Router: npm install react-router-dom;
+ - Exemplo:
+    
+    npm install react-router-dom
+
+    import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+    <Router>
+        <ul className={style.listContainer}>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/explorar">Explorar Trilha</Link></li>
+            <li><Link to="/cadastrar">Cadastrar Trilha</Link></li>
+        </ul>
+      <Routes>
+        <Route path="/" element={<Home />}> </Route>
+        <Route path="/explorar" element={<Explorar />}> </Route>
+        <Route path="/cadastrar" element={<Cadastrar />}> </Route>
+      </Routes>
+    </Router>
+
+ **Icons**
+  - https://react-icons.github.io/react-icons/
+  

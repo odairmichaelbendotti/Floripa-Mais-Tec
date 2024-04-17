@@ -1,0 +1,10 @@
+.containerFilmes{
+    display: flex;
+    justify-content: center;
+}
+
+.text{
+    background-color: blue;
+    width: 100%;
+    color: white;
+}
