@@ -66,5 +66,33 @@ img{
 }
 
 .heart{
-    color: black;
+    margin-top: auto;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.heartClass{
+    margin-top: 5px;
+    color: rgb(228, 89, 89);
+    font-size: 30px;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.heartClass:hover{
+    color: rgb(227, 64, 64);
+}
+
+.avaliacaoArea{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trashClass{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    cursor: pointer;
 }
