@@ -11,7 +11,6 @@ export const Navbar = () => {
                 </div>
                 <div>
                     <ul className={style.listContainer}>
-
                         <li><Link to="/explorar">Explorar Trilha</Link></li>
                         <li><Link to="/cadastrar">Cadastrar Trilha</Link></li>
                     </ul>

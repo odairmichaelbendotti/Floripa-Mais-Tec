@@ -65,7 +65,7 @@ export const Cadastrar = () => {
                         </div>
                     </div>
                     <div className={style.botoes}>
-                        <button className={style.cadastrar}>Cadastrar trilha</button>
+                        <Link to='/explorar'><button className={style.cadastrar}>Cadastrar trilha</button></Link>
                         <Link to='/'><button className={style.voltar}>Voltar</button></Link>
                     </div>
                 </div>
