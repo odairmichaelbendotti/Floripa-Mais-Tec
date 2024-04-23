@@ -10,12 +10,34 @@ export const Cadastrar = () => {
     const [estadoTrilha, setEstadoTrilha] = useState('');
     const [usuarioTrilha, setUsuarioTrilha] = useState('');
     const [dificuldadeTrilha, setDificuldadeTrilha] = useState('');
+    const [erro, setErro] = useState('');
+
+    const validarFormulario = () => {
+        if (!nomeTrilha || !linkTrilha || !tempoTrilha || !cidadeTrilha || !estadoTrilha || !usuarioTrilha || !dificuldadeTrilha) {
+            setErro('Todos os campos são obrigatórios.');
+            return false;
+        }
+        // Adicione aqui outras validações conforme necessário
+        setErro('');
+        return true;
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const formularioValido = validarFormulario();
+        if (formularioValido) {
+            console.log('Formulário enviado!');
+            // Aqui você pode adicionar o código para enviar os dados do formulário
+            // navigate('/algum-caminho'); // Se você quiser redirecionar o usuário
+        }
+    };
 
     return (
         <div className={style.container}>
-            <div className={style.secondContainer}>
+            <form onSubmit={handleSubmit} className={style.secondContainer}>
                 <div className={style.terceiroContainer}>
                     <h2 className={style.titulo}>Cadastro de nova trilha</h2>
+                    {erro && <p className={style.erro}>{erro}</p>}
                     <div className={style.divTwo}>
                         <div className={style.div}>
                             <label htmlFor="trailName">Nome da trilha</label>
@@ -65,11 +87,11 @@ export const Cadastrar = () => {
                         </div>
                     </div>
                     <div className={style.botoes}>
-                        <Link to='/explorar'><button className={style.cadastrar}>Cadastrar trilha</button></Link>
-                        <Link to='/'><button className={style.voltar}>Voltar</button></Link>
+                        <button type="submit" className={style.cadastrar}>Cadastrar trilha</button>
+                        <Link to='/'><button type="button" className={style.voltar}>Voltar</button></Link>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
     );
 };

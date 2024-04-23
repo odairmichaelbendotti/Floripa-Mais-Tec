@@ -71,6 +71,7 @@ export const Explorar = () => {
                 {trails.map((trail) => (
                     <Trail key={trail.id} trail={trail} />
                 ))}
+
             </div>
         </div>
     )

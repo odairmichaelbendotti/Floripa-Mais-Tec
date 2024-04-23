@@ -91,3 +91,8 @@ input {
     color: #504908;
     border: 1px solid #504908;
 }
+
+.erro {
+    color: red;
+    margin-top: 10px;
+}

@@ -10,12 +10,11 @@ function RoutesApp(){
         <Header />
             <Routes>
                 <Route path="/" element={ <Home />}/>
-                <Route path="/filmes/:id" element={ <Filmes /> }/>
+                <Route path="/filme/:id" element={ <Filmes /> }/>
 
-                 <Route path="*" element={ < Error />}/> {/* path="*" quando a página contiver "*" vai renderizar <Error /> */}
+                <Route path="*" element={ < Error />}/> {/* path="*" quando a página contiver "*" vai renderizar <Error /> */}
             </Routes>
         </BrowserRouter>
     )
 }
-
 export default RoutesApp;

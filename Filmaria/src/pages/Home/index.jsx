@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import style from './style.module.css'
 import { Container } from '../../components/Layout/index'
 import api from '../../services/api'
+import { Link } from 'react-router-dom'
 
 //URL: movie/now_playing?api_key=bb8968a5b4783e69dc794148fdb5545c&language=pt-br
 
@@ -44,7 +45,9 @@ export const Home = () => {
                                     <div key={filme.id} className={style.items}>
                                         <img src={`https://image.tmdb.org/t/p/original${filme.poster_path}`} alt={filme.title} />
                                         <div className={style.movieTitle}>{`${filme.title}`}</div>
-                                        <div className={style.movieButton}>Acessar</div>
+                                        <Link to={`/filme/${filme.id}`}>
+                                            <div className={style.movieButton}>Acessar</div>
+                                        </Link>
                                     </div>
                             )
                         })}
