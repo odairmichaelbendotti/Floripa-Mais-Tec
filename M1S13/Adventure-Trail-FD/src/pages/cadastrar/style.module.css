@@ -1,0 +1,93 @@
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #D5E1D1;
+    height: calc(100vh - 80px); 
+}
+
+.titulo {
+    padding: 10px 30px;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    margin-top: 20px;
+    align-self: flex-start;
+    margin-left: 20px;
+}
+
+.secondContainer {
+    width: 80%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.terceiroContainer {
+    width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+label {
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    height: 40px;
+    width: 100%; /* Ajuste para usar a largura total do div.div */
+    font-size: 16px;
+    color: #333;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.div {
+    width: calc(100% - 20px); /* Ajuste para corresponder à largura do input */
+    margin-bottom: 10px; /* Espaçamento entre os campos do formulário */
+}
+
+.divTwo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%; /* Certifica-se de que divTwo ocupe a largura total do contêiner */
+}
+
+.cadastrar, .voltar {
+    width: 150px;
+    height: 40px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    align-self: center;
+}
+
+.cadastrar {
+    background-color: #504908;
+    border: none;
+}
+
+.voltar {
+    background-color: #f8f8f8;
+    color: #504908;
+    border: 1px solid #504908;
+}

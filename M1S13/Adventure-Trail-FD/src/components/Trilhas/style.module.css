@@ -1,0 +1,70 @@
+.containerTrail{
+    width: 960px;
+    display: flex;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+.imgSide{
+    display: flex;
+}
+
+img{
+    width: 400px;
+}
+
+.textSide{
+    display: flex;
+    padding-left: 30px;
+    width: 100%;
+    padding-right: 30px;
+}
+
+.title{
+    color: black;
+    margin-top: 50px;
+}
+
+.line{
+    height: 2px;
+    width: 50px;
+    background-color: grey;
+    margin-top: 10px;
+    color: black;
+}
+
+.author{
+    text-align: right;
+    margin-top: 20px;
+    color: black;
+}
+
+.textContainer{
+    width: 100%;
+}
+
+.trailInfos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.trailInfos p{
+    color: black;
+}
+
+.dificuldade{
+    margin-top: 5px;
+    padding: 5px 15px;
+    background-color: #EFF0F0;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+.heart{
+    color: black;
+}
