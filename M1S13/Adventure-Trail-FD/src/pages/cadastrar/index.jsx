@@ -9,6 +9,7 @@ export const Cadastrar = () => {
     const [cidadeTrilha, setCidadeTrilha] = useState('');
     const [estadoTrilha, setEstadoTrilha] = useState('');
     const [usuarioTrilha, setUsuarioTrilha] = useState('');
+    const [avaliacaoTrilha, setAvaliacaoTrilha] = useState('');
     const [dificuldadeTrilha, setDificuldadeTrilha] = useState('');
     const [erro, setErro] = useState('');
 
@@ -79,11 +80,23 @@ export const Cadastrar = () => {
                                    onChange={(e) => setUsuarioTrilha(e.target.value)}
                                    value={usuarioTrilha} />
                         </div>
-                        <div className={style.div}>
-                            <label htmlFor="trailDificuldade">Dificuldade</label>
-                            <input type="text" id='trailDificuldade' placeholder='Dificuldade'
-                                   onChange={(e) => setDificuldadeTrilha(e.target.value)}
-                                   value={dificuldadeTrilha} />
+                        <div className={style.newDiv}>
+                            <div className={style.div}>
+                                <label htmlFor="trailDificuldade">Dificuldade</label>
+                                <input type="text" id='trailDificuldade' placeholder='Dificuldade'
+                                    onChange={(e) => setDificuldadeTrilha(e.target.value)}
+                                    value={dificuldadeTrilha} />
+                            </div>
+                            <div className={style.div}>
+                                <label htmlFor="trailAvaliacao">Avaliação</label>
+                                <select type="text" id='trailAvaliacao' onChange={(e) => setAvaliacaoTrilha(e.target.value)} value={avaliacaoTrilha}>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                     <div className={style.botoes}>

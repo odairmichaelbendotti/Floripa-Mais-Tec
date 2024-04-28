@@ -4,7 +4,8 @@
     align-items: center;
     flex-direction: column;
     background-color: #D5E1D1;
-    height: calc(100vh - 80px); 
+    height: calc(100vh - 60px); 
+    padding-bottom: 30px;
 }
 
 .titulo {
@@ -48,9 +49,9 @@ label {
     margin-bottom: 5px;
 }
 
-input {
+input, select {
     height: 40px;
-    width: 100%; /* Ajuste para usar a largura total do div.div */
+    width: 100%;
     font-size: 16px;
     color: #333;
     border: 2px solid #ccc;
@@ -60,15 +61,15 @@ input {
 }
 
 .div {
-    width: calc(100% - 20px); /* Ajuste para corresponder à largura do input */
-    margin-bottom: 10px; /* Espaçamento entre os campos do formulário */
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
 }
 
 .divTwo {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    width: 100%; /* Certifica-se de que divTwo ocupe a largura total do contêiner */
+    width: 100%;
 }
 
 .cadastrar, .voltar {
@@ -91,9 +92,15 @@ input {
     background-color: #f8f8f8;
     color: #504908;
     border: 1px solid #504908;
+    margin-left: 20px;
 }
 
 .erro {
     color: red;
     margin-top: 10px;
+}
+
+.newDiv{
+    display: flex;
+    gap: 30px;
 }

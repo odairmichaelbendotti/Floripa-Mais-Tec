@@ -7,6 +7,17 @@ import { CiTrash } from "react-icons/ci";
 
 export const Trail = ({ trail }) => {
 
+    const HeartRating =  ({totalHearts=5, chooseHeart}) => {
+        const hearts = []
+        for (let i = 0; i < chooseHeart; i++){
+            hearts.push(<FaHeart key={i} className={style.heartClass}/>)
+        }
+        for (let i = 0; i < (totalHearts - chooseHeart); i++){
+            hearts.push(<FaRegHeart key={i} className={style.heartClass}/>)
+        }
+        return hearts;
+    }
+
     return(
         <div className={style.containerTrail}>
             <div className={style.imgSide}>
@@ -23,11 +34,7 @@ export const Trail = ({ trail }) => {
                             <div className={style.dificuldade}>{trail.dificuldade}</div>
                             <div className={style.avaliacaoArea}>
                                 <div className={style.heart}>
-                                    <FaHeart className={style.heartClass}/>
-                                    <FaHeart className={style.heartClass}/>
-                                    <FaHeart className={style.heartClass}/>
-                                    <FaHeart className={style.heartClass}/>
-                                    <FaRegHeart className={style.heartClass}/>
+                                    <HeartRating chooseHeart={3}/>
                                 </div>
                                 <div>
                                     <CiTrash className={style.trashClass}/>   
